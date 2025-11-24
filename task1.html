@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Records</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2 style="text-align:center; font-family:Arial, sans-serif;">Student Information Table</h2>
+    <table
+        style="width:70%; margin:30px auto; border-collapse:collapse; border:2px solid #3b3b3b; background:#fcfcfc;">
+        <tr>
+            <th style="background:#a5c8e2; color:#222; font-size:1.1em; padding:10px; border:1px solid #3b3b3b;">Student ID</th>
+            <th style="background:#a5c8e2; color:#222; font-size:1.1em; padding:10px; border:1px solid #3b3b3b;">Name</th>
+            <th style="background:#a5c8e2; color:#222; font-size:1.1em; padding:10px; border:1px solid #3b3b3b;">Age</th>
+            <th style="background:#a5c8e2; color:#222; font-size:1.1em; padding:10px; border:1px solid #3b3b3b;">Gender</th>
+            <th style="background:#a5c8e2; color:#222; font-size:1.1em; padding:10px; border:1px solid #3b3b3b;">Marks</th>
+            <th style="background:#a5c8e2; color:#222; font-size:1.1em; padding:10px; border:1px solid #3b3b3b;">City</th>
+        </tr>
+        <tr>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">1001</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Ali Raza</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">19</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Male</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">420</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Lahore</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">1002</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Sara Khan</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">18</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Female</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">435</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Karachi</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">1003</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Bilal Ahmed</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">20</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Male</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">410</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Islamabad</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">1004</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Ayesha Siddiqi</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">21</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Female</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">455</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Faisalabad</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">1005</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Usman Tariq</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">22</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Male</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">400</td>
+            <td style="text-align:center; font-family:sans-serif; padding:8px; border:1px solid #3b3b3b;">Multan</td>
+        </tr>
+    </table>
+
+
+    <div style="text-align:center; margin-top:30px;">
+        <button onclick="showStudentInfo()">Show Student Info</button>
+        <button onclick="showLabInfo()">Show Lab Info</button>
+        <button onclick="showCustomAlert()">Show Custom Alert</button>
+    </div>
+
+
+    <script>
+        function showStudentInfo() {
+            console.log("Displaying student information...");
+            window.alert("This webpage displays student records in an HTML table.");
+        }
+        function showLabInfo() {
+            console.log("Displaying lab information...");
+            window.alert("Lab 11 covers HTML, CSS, and a basic introduction to JavaScript.");
+        }
+        function showCustomAlert() {
+            console.log("Custom alert button clicked.");
+            window.alert("hi! Salman");
+        }
+    </script>
+</body>
+</html>
+
